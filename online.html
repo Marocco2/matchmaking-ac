@@ -1,0 +1,176 @@
+<div class="multiplayer">
+
+	<div class="timer template">
+		<div class="onlineTimer">
+			<div class="bgr"></div>
+			<div class="title">
+				Online Session
+			</div>
+			<div class="body">
+				<div class="servername">
+					ServerName
+				</div>
+				<div class="trackname">
+					TrackName
+				</div>
+				<div class="carname">
+					CarName
+				</div>
+				<div class="timer">
+					in <span class="value">00:00</span>
+				</div>
+			</div>
+			<div class="controls">
+				<span class="cancel" data-mode="unsubscribe">cancel</span>
+				<span class="start" data-mode="join">join</span>
+			</div>
+		</div>
+
+		<div class="dialogPassword">
+			<div class="modalwrapper">
+				<!--<input type="text" class="" id="serverpassword" />-->
+				<div class="button" data-mode="ok">OK</div>
+				<div class="button" data-mode="Cancel">Cancel</div>
+			</div>
+		</div>
+
+	</div>
+
+	<table class="template">
+		<tr class="item">
+			<td class="name">
+				<div class="value"></div>
+				<div class="serverlocation"></div>
+				<div class="details">
+					<span class="trackname"></span>
+					<span class="sessiontypes"></span>
+					<span class="servercars"></span>
+				</div>
+			</td>
+			<td class="clients">
+				<span class="value"></span>
+				<span class="suffix">/</span>
+				<span class="max"></span>
+			</td>
+			<td class="ping">
+				<span class="value">...</span>
+				<span class="suffix">ms</span>
+			</td>
+		</tr>
+	</table>
+
+	<div class="list">
+		<div class="controls">
+			<div class="filters">
+			</div>
+			<div class="buttons">
+				<div class="button normal" data-mode="refresh" title="Refresh server list"></div>
+				<div class="button normal" data-mode="ping" title="Ping servers"></div>
+				<div class="button normal" data-mode="help" title="Display help dialog"></div>
+				<div class="filterpanel">
+					<div class="widget">
+						<input type="checkbox" data-mode="pickup" data-bind="launcher?ONLINE/PICKUP" title="Only display servers that don't require booking" />
+					</div>
+					<div class="widget">
+						<input type="checkbox" data-mode="empty" data-bind="launcher?ONLINE/SHOWEMPTY" title="Include empty servers in the list" />
+					</div>
+					<div class="widget">
+						<input type="checkbox" data-mode="full" data-bind="launcher?ONLINE/SHOWFULL" title="Include full servers in the list" />
+					</div>
+					<div class="widget">
+						<input type="checkbox" data-mode="locked" data-bind="launcher?ONLINE/SHOWLOCKED" title="Include locked servers in the list" />
+					</div>
+					<div class="widget">
+						<input type="checkbox" data-mode="booking" data-bind="launcher?ONLINE/SHOWBOOKING" title="Only display servers in booking mode" />
+					</div>
+
+					<div class="widget">
+						<input type="checkbox" data-mode="known" data-bind="launcher?ONLINE/KNOWNCONTENT"  title="Only display servers you have the content for" />
+					</div>
+					
+					<div class="widget">
+						<input type="checkbox" data-mode="joined" title="Only display servers you have joined recently" />
+					</div>
+
+				</div>
+
+
+				<div class="search">
+					<input type="text" class="serversearch" title="Search in server list" />
+				</div>
+			</div>
+		</div>
+
+		<div class="serverdetails">
+			<div class="container">
+				<div class="message"></div>
+				<div class="sessionlist"></div>
+				<div class="servername">
+					<span class="value"></span>
+				</div>
+				<input type="text" placeholder=" Enter server password ..." class="serverpass" />
+				<div class="country">
+					server location
+					<span class="value"></span>
+				</div>
+				<div class="trackname"></div>
+				<div class="trackoutline"></div>
+				<div class="innerpanel playerlist">
+					<h3>Drivers on server <span></span></h3>
+					<div class="value">
+						<!--						<div><span>Marshal Tsukino</span><span>BMW 1M</span></div>
+												<div><span>Conrad Giùgovaz</span><span>Abarth 500</span></div>
+												<div><span>Loreto Winterbottom</span><span>BMW 1M</span></div>
+												<div><span>Baldomero Tailler</span><span>P4/5 Competizione model 2011</span></div>
+												<div><span>Elsdon Bustillo</span><span>BMW 1M</span></div>
+												<div><span>Gallo Schindler</span><span>BMW 1M</span></div>
+												<div><span>Jere Zanetti</span><span>P4/5 Competizione model 2011</span></div>
+												<div><span>Jeremias Meyer</span><span>P4/5 Competizione model 2011</span></div>
+												<div><span>Arlo Giannino</span><span>Abarth 500</span></div>
+												<div><span>Gian Sauvageau</span><span>Abarth 500</span></div>-->
+					</div>
+				</div>
+				<div class="innerpanel carlist">
+					<h3>Select an available car &#9660;</h3>
+					<div class="value">
+					</div>
+				</div>
+				<div class="playerlist"></div>
+				<div class="servercontrols">
+					<div class="button" data-mode="booking">request booking</div>
+					<div class="button hidden" data-mode="join">join<span></span></div>
+					<div class="button disabled" data-mode="unsubscribe">cancel booking</div>
+					<div class="button" data-mode="reloadserver">
+						refresh<br />
+						server info
+					</div>
+				</div>
+				<div class="connect"></div>
+			</div>
+		</div>
+
+		<table>
+			<thead>
+				<tr>
+					<td class="name selected" data-mode="name" title="Sort alphabetically">name <span class="pingcount">pinged servers <span> </span> </span><span class="total">total servers listed:<span>0</span> </span> <div class="loader">populating server list ...</div></td>
+					<td class="clients inverted" data-mode="clients" title="Sort by number of clients">clients</td>
+					<td class="ping" data-mode="ping" title="Sort by ping value">ping</td>
+				</tr>
+			</thead>
+			<tbody class="tdatalist">
+				<tr class="spacer"></tr>
+			</tbody>
+		</table>
+	</div>
+
+
+
+	<div class="disclaimer">
+		<h3>MULTIPLAYER</h3>
+		<p>This software contains features that allow you to play the software with other players over a network or the Internet (“Multiplayer Play”). By using such features or otherwise engaging in Multiplayer mode, you agree that KUNOS Simulazioni may generate, store and transmit certain information that identifies your computer to other computers for purposes of Multiplayer mode and during the whole time you’re engaged in Multiplayer mode. You agree that Multiplayer mode is not supervised or otherwise under the control of KUNOS Simulazioni. You acknowledge and agree that KUNOS Simulazioni has no control over or responsibility for your experience while engaged in Multiplayer Play, or any content or other information or data you may create, encounter or receive, including chat, while you are engaged in Multiplayer Play. You acknowledge and agree that Multiplayer mode may not be consistently available or operate error free, and that Multiplayer mode may be discontinued by KUNOS Simulazioni at any time without notice to you.</p>
+		<p>You acknowledge and agree that you have no expectation of privacy regarding communications you make in the Game, whether through private in-Game messaging, during chat, or in chat rooms. You should not provide private information to any other player in the Game. KUNOS Simulazioni shall not be responsible for the consequences of any such disclosure by you.</p>
+		<p>You may encounter and converse with people who are rude, offensive, belligerent, and who may use indecent, obscene, and/or threatening or harassing language while using this software. KUNOS Simulazioni does not guarantee that you will not encounter behavior of others that you may view as insulting, demeaning, offensive, threatening or harassing. You assume all risk associated with using this software, and KUNOS Simulazioni assumes no responsibility for the conduct of any other players, and shall not be liable to you or any other person for their conduct.</p>
+		<p>You further agree that in the event of a failure in the Game, the System and/or the Software, KUNOS Simulazioni may provide crashlog information in order to review analyze and provide reports on such information to determine the cause or correction of the failure.</p>
+	</div>
+
+</div>

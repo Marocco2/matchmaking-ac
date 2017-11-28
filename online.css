@@ -1,0 +1,1169 @@
+﻿.throbbing {
+  -webkit-animation: throb;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+.throbonce {
+  -webkit-animation: throb;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 5;
+  -webkit-animation-delay: 3.5s;
+}
+@-webkit-keyframes throbbgr {
+  0% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #333;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+.modalDialogOverlay.featurewarning .dialog.notice {
+  background-color: rgba(255, 0, 0, 0.45);
+}
+.modalDialogOverlay.featurewarning .dialog.notice .options > div {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modalDialogOverlay.featurewarning h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.modalDialogOverlay.featurewarning .body {
+  font-size: 18px;
+  text-shadow: 1px 1px 0px #000;
+}
+.modalDialogOverlay.onlinedisclaimer {
+  background-position: center 20px;
+}
+.modalDialogOverlay.onlinedisclaimer .dialog.selected {
+  width: 830px;
+  margin: 100px auto;
+}
+.modalDialogOverlay.onlinedisclaimer .message {
+  font-size: 14px;
+  text-align: justify;
+}
+.modalDialogOverlay.onlinedisclaimer .message h3 {
+  text-align: center;
+}
+.modalDialogOverlay.onlinedisclaimer .message p {
+  margin-bottom: 10px;
+}
+.subpanel.online {
+  padding-left: 10px;
+  top: 280px;
+  z-index: 6;
+}
+.subpanel.online .disclaimer {
+  display: none;
+}
+.subpanel.online .featurewarning {
+  position: absolute;
+  top: -220px;
+  right: -6px;
+  z-index: 900;
+  overflow: hidden;
+  width: 260px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.subpanel.online .featurewarning h3 {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px 0;
+  background-color: #bd0000;
+}
+.subpanel.online .featurewarning .body {
+  padding: 5px 10px;
+  text-align: center;
+}
+.subpanel.online .featurewarning .body .note {
+  color: #999;
+  margin-top: 5px;
+}
+.subpanel.online .featurewarning .body .link {
+  color: #aaa;
+  border-bottom: 1px solid #bd0000;
+  cursor: pointer;
+}
+.subpanel.online .featurewarning .body .link:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.subpanel.online.transition {
+  opacity: 0;
+}
+.subpanel.online.showingdetails table {
+  /*tr.selected {
+				position: absolute;
+				top: 0;
+				-webkit-transition: top 1s, position 1s 1s;
+			}*/
+  /*tr.spacer {
+				display: block;
+				height: 65px;
+				background: none;
+				border-bottom: 2px dotted #fff;
+				border-radius: 0;
+			}*/
+}
+.subpanel.online.showingdetails table tbody {
+  height: 400px;
+  -webkit-transition: height 0.25s 0s;
+}
+.subpanel.online.showingdetails table tr:not(.selected) {
+  opacity: 0.75 !important;
+  /*//background-color: rgba(0,0,0,0.25);*/
+}
+.subpanel.online .controls {
+  margin: 0 0 5px 0;
+  height: 32px !important;
+  line-height: 32px;
+  position: relative;
+  width: 860px;
+}
+.subpanel.online .controls .buttons > .button {
+  background-color: #bd0000;
+  width: 48px;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 0 !important;
+  line-height: 32px !important;
+}
+.subpanel.online .controls .buttons > .button[data-mode=refresh] {
+  background-image: url("graphics/reload.png");
+  background-position: center;
+}
+.subpanel.online .controls .buttons > .button[data-mode=help] {
+  background-image: url("graphics/help.png");
+  background-position: center;
+}
+.subpanel.online .controls .buttons > .button[data-mode=ping] {
+  background-image: url("graphics/ping_server.png");
+  background-position: center;
+}
+.subpanel.online .controls .buttons input.serversearch {
+  position: absolute;
+  right: 0;
+  height: 32px;
+}
+.subpanel.online .controls .buttons .filterpanel {
+  position: absolute;
+  right: 200px;
+  white-space: nowrap;
+}
+.subpanel.online .controls .widget {
+  margin-right: 4px;
+  height: 32px;
+  display: inline-block;
+}
+.subpanel.online .controls .widget.onlydev {
+  display: none;
+}
+.subpanel.online .controls input[type=checkbox] {
+  margin-right: 0px;
+  vertical-align: bottom;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  line-height: normal;
+  background-color: #222;
+}
+.subpanel.online .controls input[type=checkbox]:disabled {
+  opacity: 0.5;
+}
+.subpanel.online .controls input[type=checkbox][data-mode=empty] {
+  background-image: url(graphics/empty.png);
+}
+.subpanel.online .controls input[type=checkbox][data-mode=pickup] {
+  background-image: url(graphics/nobooking.png);
+}
+.subpanel.online .controls input[type=checkbox][data-mode=full] {
+  background-image: url(graphics/full.png);
+}
+.subpanel.online .controls input[type=checkbox][data-mode=locked] {
+  background-image: url(graphics/password.png);
+}
+.subpanel.online .controls input[type=checkbox][data-mode=booking] {
+  background-image: url(graphics/currently_booking.png);
+}
+.subpanel.online .controls input[type=checkbox][data-mode=joined] {
+  background-image: url(graphics/latest_servers_joined.png);
+}
+.subpanel.online .controls input[type=checkbox][data-mode=known] {
+  background-image: url(graphics/dlc_content.png);
+}
+.subpanel.online .controls input[type=checkbox]:checked {
+  background-color: #bd0000;
+  border-color: transparent;
+}
+.subpanel.online table {
+  width: 850px;
+  border-collapse: collapse;
+  /*-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, transparent), to(rgba(250, 250, 250, 0.25)));*/
+}
+.subpanel.online table thead {
+  width: 860px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*border-radius: 6px 6px 0 0;*/
+}
+.subpanel.online table thead td {
+  height: 30px;
+  vertical-align: middle;
+  color: #999;
+  font-size: 14px;
+  -webkit-transition: background-color 1s, color 0.75s;
+}
+.subpanel.online table thead td.selected {
+  color: #fff;
+}
+.subpanel.online table thead td.selected:after {
+  content: " ▲";
+}
+.subpanel.online table thead td.selected.inverted:after {
+  content: " ▼";
+}
+.subpanel.online table thead td:hover {
+  background-color: #999;
+  color: #000;
+  cursor: pointer;
+}
+.subpanel.online table thead td.name {
+  padding-left: 5px;
+  position: relative;
+}
+.subpanel.online table thead td.name .loader {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 100;
+  background-color: #000;
+  -webkit-transition: bottom 0.5s, opacity 0.5s;
+}
+.subpanel.online table thead td.name > span.pingcount {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  opacity: 0;
+  /*-webkit-transition: opacity 0.5s;*/
+}
+.subpanel.online table thead td.name > span.pingcount.selected {
+  opacity: 1;
+}
+.subpanel.online table thead td.name > span.pingcount > span {
+  color: #ccc;
+}
+.subpanel.online table thead td.name > span.total {
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  color: #999;
+  font-size: 12px;
+  margin-right: 10px;
+  white-space: nowrap;
+  bottom: 0;
+  top: 0;
+  line-height: 30px;
+}
+.subpanel.online table thead td.name > span.total > span {
+  margin-left: 10px;
+  color: #ccc;
+}
+.subpanel.online table thead td.ping {
+  padding-right: 20px;
+  border-radius: 0px 6px 0 0;
+}
+.subpanel.online table thead tr.spacer {
+  display: none;
+}
+.subpanel.online table tbody {
+  position: relative;
+  width: 860px;
+  height: 600px;
+  overflow-y: scroll;
+  -webkit-transition: height 0.25s 0s;
+}
+.subpanel.online table tbody.sorting {
+  display: none;
+}
+.subpanel.online table tbody tr {
+  -webkit-transition: background-color 0.5s, opacity 0.5s;
+  opacity: 1;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 6px 0 0 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: height 0.25s, margin-bottom 0.25s;
+}
+.subpanel.online table tbody tr.hidden {
+  display: none;
+}
+.subpanel.online table tbody tr.pitslotsexceeded .clients {
+  color: orange;
+}
+.subpanel.online table tbody tr.currentlybooked {
+  border: 1px solid #ccc;
+  border-width: 1px 3px 1px 3px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 16px #000;
+}
+.subpanel.online table tbody tr.passprotected td.name .value {
+  background-image: url(graphics/password_lock_14x13.png);
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  padding-left: 24px;
+}
+.subpanel.online table tbody tr.pickuprace td.name {
+  background-image: url(graphics/nobooking_16.png);
+  background-repeat: no-repeat;
+  background-position: 3px 6px;
+}
+.subpanel.online table tbody tr.pickuprace td.name .value {
+  padding-left: 24px;
+}
+.subpanel.online table tbody tr.pickuprace.passprotected td.name .value {
+  background-position: 18px center;
+  padding-left: 32px;
+}
+.subpanel.online table tbody tr.keyfiltered {
+  height: 0px;
+  margin-bottom: 0px;
+}
+.subpanel.online table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.subpanel.online table tbody tr:active {
+  -webkit-transition: background-color 0.25s;
+  border-bottom-color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.subpanel.online table tbody tr.selected {
+  text-shadow: 1px 1px 0px #000;
+  background-color: rgba(169, 0, 0, 0.75);
+}
+.subpanel.online table tbody tr.item.unknowncar,
+.subpanel.online table tbody tr.item.unknowntrack {
+  opacity: 0.75;
+}
+.subpanel.online table tbody tr.item.unknowncar td.name,
+.subpanel.online table tbody tr.item.unknowntrack td.name {
+  color: #666;
+}
+.subpanel.online table tbody .noping {
+  background-color: rgba(169, 0, 0, 0.25);
+  opacity: 0.75;
+}
+.subpanel.online table tbody td {
+  font-size: 14px;
+  vertical-align: middle;
+}
+.subpanel.online table tbody td .suffix {
+  color: #999;
+  font-size: 12px;
+}
+.subpanel.online table tbody td.name {
+  position: relative;
+  font-size: 18px;
+  border-right: 1px solid #444;
+}
+.subpanel.online table tbody td.name .value {
+  padding-bottom: 3px;
+  padding-left: 5px;
+  text-shadow: 1px 1px 3px #000;
+  white-space: nowrap;
+  max-width: 500px;
+  overflow: hidden;
+}
+.subpanel.online table tbody td.name .serverlocation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  padding: 3px;
+  color: #999;
+  text-transform: uppercase;
+}
+.subpanel.online table tbody td.name .details {
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  white-space: nowrap;
+  width: 658px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.subpanel.online table tbody td.name .details > span {
+  display: inline-block;
+  height: 20px;
+}
+.subpanel.online table tbody td.name .details .trackname {
+  width: 175px;
+  /*background: rgba(0,0,0,0.25);*/
+  padding: 3px;
+  padding-left: 10px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 50%);
+}
+.subpanel.online table tbody td.name .details .trackname.unknown {
+  color: red;
+}
+.subpanel.online table tbody td.name .details .sessiontypes {
+  width: 80px;
+}
+.subpanel.online table tbody td.name .details .sessiontypes span {
+  display: inline-block;
+  padding: 3px;
+  font-weight: bolder;
+  font-size: 10px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.subpanel.online table tbody td.name .details .sessiontypes span.booking.active {
+  background: #292;
+}
+.subpanel.online table tbody td.name .details .sessiontypes span.active {
+  color: #eee;
+  border: 1px solid #444;
+  background: #222;
+}
+.subpanel.online table tbody td.name .details .servercars {
+  font-size: 11px;
+  vertical-align: top;
+  height: 26px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.subpanel.online table tbody td.name .details .servercars span {
+  display: inline-block;
+  padding: 6px;
+  color: #999;
+}
+.subpanel.online table tbody td.name .details .servercars span.unknown {
+  color: red;
+}
+.subpanel.online table tbody td.name .details .servercars span:nth-child(2n+1) {
+  background: rgba(0, 0, 0, 0.25);
+}
+.subpanel.online table tbody td.ping {
+  position: relative;
+  -webkit-transition: background-color 0.5s;
+  border-left: 1px dotted #333;
+}
+.subpanel.online table tbody td.ping.loading {
+  background-color: rgba(169, 0, 0, 0.75) !important;
+}
+.subpanel.online table tbody .connect {
+  width: 32px;
+  height: 32px;
+  background-color: #a90000;
+  border-radius: 6px;
+  position: absolute;
+  right: -20px;
+}
+.subpanel.online table .clients {
+  width: 90px;
+  text-align: center;
+}
+.subpanel.online table .ping {
+  width: 90px;
+  text-align: right;
+  padding-right: 10px;
+}
+.subpanel.online table .name {
+  width: 670px;
+}
+.subpanel.online table thead .name {
+  width: 680px;
+}
+.subpanel.online table thead .clients {
+  width: 87px;
+}
+.subpanel.online table thead .ping {
+  width: 86px;
+}
+.subpanel.online table thead,
+.subpanel.online table tbody {
+  display: block;
+}
+.subpanel.online .serverdetails {
+  position: relative;
+  width: 860px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+  z-index: 5;
+  font-size: 14px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  -webkit-transition: height 0.25s 0s;
+  /*.serverpass {
+			display: none;
+		}*/
+  /*&.passprotected {*/
+  /*}*/
+}
+.subpanel.online .serverdetails.unknowntrack {
+  background-image: none !important;
+}
+.subpanel.online .serverdetails.unknowntrack .trackoutline {
+  background-image: none !important;
+}
+.subpanel.online .serverdetails.unknowntrack .trackname {
+  -webkit-animation: throb;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+.subpanel.online .serverdetails.unknowntrack .servercontrols .button,
+.subpanel.online .serverdetails.unknowncar .servercontrols .button {
+  display: none;
+}
+.subpanel.online .serverdetails.unknowntrack .container .sessionlist,
+.subpanel.online .serverdetails.unknowncar .container .sessionlist {
+  display: none;
+}
+.subpanel.online .serverdetails.unknowntrack .container .message,
+.subpanel.online .serverdetails.unknowncar .container .message {
+  bottom: 0;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.5s, bottom 0s;
+}
+.subpanel.online .serverdetails .serverpass {
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  z-index: 10;
+  background: #000;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  left: 0;
+  width: 316px;
+  border-top: 1px solid #666;
+  -webkit-animation: throbbgr;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 5;
+}
+.subpanel.online .serverdetails .container {
+  padding: 3px 5px;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.subpanel.online .serverdetails .container > div {
+  box-sizing: border-box;
+}
+.subpanel.online .serverdetails .container .message {
+  font-family: "Segoe UI Light";
+  font-size: 18px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 64px;
+  line-height: 200px;
+  top: 0;
+  bottom: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: opacity 0.5s, bottom 0s 0.5s;
+  text-align: center;
+}
+.subpanel.online .serverdetails .container .message.smaller {
+  font-size: 16px;
+}
+.subpanel.online .serverdetails .container .message > span {
+  color: #ff0;
+  font-size: 12px;
+}
+.subpanel.online .serverdetails .container .message.active {
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s, bottom 0s;
+}
+.subpanel.online .serverdetails.active {
+  height: 200px;
+  /*box-shadow: 0px 0px 16px #000;*/
+  -webkit-transition: height 0.25s 0s, background-image 0.5s;
+  border-bottom: 3px solid #000;
+}
+.subpanel.online .serverdetails.active .carlist .value {
+  overflow-y: scroll;
+}
+.subpanel.online .serverdetails.active .country {
+  opacity: 1;
+}
+.subpanel.online .serverdetails .servername {
+  box-sizing: border-box;
+  height: 26px;
+  line-height: 26px;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 6px 0 0 0;
+  padding: 0 6px;
+  width: 571px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #aaa;
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%);
+}
+.subpanel.online .serverdetails .servername:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.subpanel.online .serverdetails .servername .value {
+  white-space: nowrap;
+  text-transform: none;
+  font-size: 18px;
+  color: #fff;
+  /*font-weight: 600;*/
+  font-family: "Segoe UI Light";
+  letter-spacing: 0.08em;
+}
+.subpanel.online .serverdetails .trackname {
+  position: absolute;
+  bottom: 24px;
+  left: 10px;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.subpanel.online .serverdetails .trackoutline {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 130px;
+  height: 110px;
+  top: 30px;
+  opacity: 0.75;
+  -webkit-transition: background-image 0.5s ease-out 0s;
+}
+.subpanel.online .serverdetails .country {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  width: 325px;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  color: #999;
+  padding: 3px;
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%);
+  opacity: 0;
+}
+.subpanel.online .serverdetails .country .value {
+  color: #fff;
+  font-size: 11px;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel {
+  right: 299px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.subpanel.online .serverdetails .playerlist.innerpanel h3 span {
+  margin-right: 3px;
+  font-size: 10px;
+  color: #ccc;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value {
+  overflow-x: hidden;
+  margin-left: 0;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div {
+  text-align: left;
+  border: none;
+  margin-left: 0;
+  position: relative;
+  opacity: 0.5;
+  /*> div {
+						position: absolute;
+						left: 4px;
+						top: 24px;
+						border-radius: 9px;
+						height: 9px;
+						width: 9px;
+						border: 1px solid #ccc;
+						box-sizing: border-box;
+					}*/
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div:nth-child(2n+1) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div span {
+  display: block;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div > span:nth-child(2) {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div.connected {
+  opacity: 1;
+  /*> div {
+							border: 1px solid #fff;
+							background-color: #fff;
+						}*/
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div.entrylist {
+  opacity: 1;
+  color: #ff0;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div.entrylist.connected {
+  color: #fff;
+}
+.subpanel.online .serverdetails .playerlist.innerpanel .value > div.isplayer {
+  font-style: italic;
+}
+.subpanel.online .serverdetails .carlist {
+  right: 64px;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 16px #000;
+}
+.subpanel.online .serverdetails .carlist .value > div {
+  cursor: pointer;
+  position: relative;
+}
+.subpanel.online .serverdetails .carlist .value > div > span > span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 22px;
+}
+.subpanel.online .serverdetails .carlist .value > div.unknown {
+  -webkit-animation: throb;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.subpanel.online .serverdetails .carlist .value > div:hover:not(.unknown) > span {
+  text-decoration: underline;
+  color: #fff;
+}
+.subpanel.online .serverdetails .carlist .value > div:active:not(.unknown),
+.subpanel.online .serverdetails .carlist .value > div.selected:not(.unknown) {
+  color: #fff;
+  background-image: -webkit-linear-gradient(right, rgba(189, 0, 0, 0) 0%, rgba(189, 0, 0, 0.75) 15%, rgba(189, 0, 0, 0.75) 85%, rgba(189, 0, 0, 0) 100%);
+}
+.subpanel.online .serverdetails .carlist .value > div:active:not(.unknown) > span,
+.subpanel.online .serverdetails .carlist .value > div.selected:not(.unknown) > span {
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+.subpanel.online .serverdetails.pickupmode .button[data-mode=booking],
+.subpanel.online .serverdetails.pickupmode .button[data-mode=unsubscribe] {
+  display: none !important;
+}
+.subpanel.online .serverdetails.pickupmode .button[data-mode=join] {
+  display: visible !important;
+}
+.subpanel.online .serverdetails.pickupmode .carlist .value {
+  margin-left: 5px;
+}
+.subpanel.online .serverdetails.pickupmode .carlist .value > div {
+  text-align: left;
+}
+.subpanel.online .serverdetails.pickupmode .carlist .value > div > span > span {
+  top: 1px;
+  border-left: 1px solid #999;
+}
+.subpanel.online .serverdetails.pickupmode .carlist .value > div:active:not(.unknown),
+.subpanel.online .serverdetails.pickupmode .carlist .value > div.selected:not(.unknown) {
+  background-color: rgba(189, 0, 0, 0.5);
+}
+.subpanel.online .serverdetails .innerpanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 12px;
+  width: 235px;
+  border-right: 1px solid #000;
+  -webkit-transition: background-color 0s;
+}
+.subpanel.online .serverdetails .innerpanel.highlight .value > div > span {
+  -webkit-animation: throb;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 5;
+  -webkit-animation-delay: 3.5s;
+}
+.subpanel.online .serverdetails .innerpanel h3 {
+  box-sizing: border-box;
+  height: 26px;
+  line-height: 26px;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.095em;
+  color: #999;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  /*background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(255,255,255,0.25) 50%);*/
+}
+.subpanel.online .serverdetails .innerpanel .value {
+  margin-left: 10px;
+  height: 174px;
+  padding-left: 0px;
+  overflow-y: scroll;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.subpanel.online .serverdetails .innerpanel .value > div {
+  padding: 6px 3px;
+  text-align: center;
+  -webkit-transition: background 0.25s;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 1px #000;
+  white-space: nowrap;
+  padding-right: 5px;
+  font-size: 13px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.subpanel.online .serverdetails .innerpanel .value > div:last-child {
+  border-bottom: none;
+}
+.subpanel.online .serverdetails .innerpanel .value > div span {
+  -webkit-animation: background-color 0.75s, color 0.5s;
+  padding: 3px 6px;
+}
+.subpanel.online .serverdetails .sessionlist {
+  position: absolute;
+  width: 130px;
+  left: 145px;
+  top: 30px;
+}
+.subpanel.online .serverdetails .sessionlist > div {
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  box-sizing: border-box;
+  color: #aaa;
+  text-shadow: 0 0 3px #000;
+}
+.subpanel.online .serverdetails .sessionlist > div.current {
+  color: #fff;
+}
+.subpanel.online .serverdetails .sessionlist > div.endoftime {
+  /*color: @acred;*/
+  -webkit-animation: throb;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+.subpanel.online .serverdetails .sessionlist > div .duration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  line-height: 24px;
+}
+.subpanel.online .serverdetails .sessionlist > div .duration .pit {
+  position: absolute;
+  right: -2em;
+  top: 0;
+}
+.subpanel.online .serverdetails .servercontrols {
+  position: absolute;
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 64px;
+  font-size: 10px;
+}
+.subpanel.online .serverdetails .servercontrols .button {
+  height: 64px;
+  width: 64px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 34px;
+  background-color: #bd0000;
+  border-radius: 0 6px 6px 0;
+  background-position: center 6px;
+  background-repeat: no-repeat;
+  margin-bottom: 3px;
+  -webkit-transition: background-color 0.25s, color 0.25s;
+}
+.subpanel.online .serverdetails .servercontrols .button.disabled {
+  opacity: 1 !important;
+  background-color: rgba(189, 0, 0, 0.5);
+}
+.subpanel.online .serverdetails .servercontrols .button span {
+  display: block;
+  font-size: 12px;
+}
+.subpanel.online .serverdetails .servercontrols .button[data-mode=booking] {
+  background-image: url("graphics/booking.png");
+}
+.subpanel.online .serverdetails .servercontrols .button[data-mode=join] {
+  background-image: url("graphics/join_server.png");
+}
+.subpanel.online .serverdetails .servercontrols .button[data-mode=unsubscribe] {
+  background-image: url("graphics/cancel_booking.png");
+}
+.subpanel.online .serverdetails .servercontrols .button[data-mode=playerlist] {
+  background-image: url("graphics/refresh_player_list.png");
+}
+.subpanel.online .serverdetails .servercontrols .button[data-mode=reloadserver] {
+  background-image: url("graphics/reload.png");
+}
+.subpanel.online .serverdetails .servercontrols .button:active {
+  background-color: #fff;
+  color: #bd0000;
+}
+.subpanel.online.loading .loader {
+  opacity: 1 !important;
+  bottom: 0 !important;
+}
+.subpanel.online.loading table tbody {
+  display: none !important;
+}
+.onlineTimer {
+  position: absolute;
+  display: block;
+  z-index: 500;
+  box-sizing: border-box;
+  border-radius: 5px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-align: center;
+  box-shadow: 0 0 16px #000;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  top: 210px;
+  left: 1074px;
+  opacity: 0;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: opacity 0.25s, top 0s 0.25s, left 0s 0.25s, width 0s 0.25s, height 0s 0.25s, border 0s 0.25s;
+  border: 1px solid #999;
+}
+.onlineTimer .bgr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+  border-radius: 5px !important;
+  opacity: 0.25 !important;
+  -webkit-transition: background-image 0.5s;
+}
+.onlineTimer > * {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+}
+.onlineTimer:hover,
+.onlineTimer.drag {
+  cursor: move !important;
+  -webkit-transition: none !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  box-shadow: none !important;
+  border: 1px solid #666 !important;
+}
+.onlineTimer.drag {
+  -webkit-transition: none !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+}
+.onlineTimer.active {
+  top: 720px;
+  left: 50px;
+  width: 220px;
+  height: 200px;
+  opacity: 1;
+  border: 1px solid transparent;
+  -webkit-transition: top 1.5s ease-out, left 1.5s ease-out, width 0.75s ease-in, height 0.75s ease-in, opacity 0.5s, border 1s;
+}
+.onlineTimer.active > * {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s 0.5s;
+}
+.onlineTimer.ready {
+  box-shadow: 0 0 64px 0px rgba(255, 255, 255, 0.25);
+  -webkit-transition: box-shadow 0.5s !important;
+}
+.onlineTimer.ready .title {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: color 0.5s, background-color 0.5s !important;
+}
+.onlineTimer.ready .controls span.start {
+  opacity: 1;
+  cursor: pointer;
+  color: #fff;
+}
+.onlineTimer .title {
+  text-align: center;
+  /*background-color: rgba(255,255,255,0.25);*/
+  padding: 3px 0;
+  font-size: 18px;
+  color: #ccc;
+  /*font-weight: bold;*/
+  border-bottom: 1px solid #666;
+  border-radius: 3px 3px 0 0;
+}
+.onlineTimer .servername {
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.onlineTimer .carname,
+.onlineTimer .trackname {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #ccc;
+}
+.onlineTimer .timer {
+  white-space: nowrap;
+  margin-top: 5px;
+  padding: 6px 0;
+  font-size: 16px;
+  color: #999;
+}
+.onlineTimer .timer .value {
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 2px dotted #666;
+  padding: 3px;
+}
+.onlineTimer .controls {
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  display: table;
+  width: 100%;
+  color: #333;
+  font-weight: bold;
+  border-top: 1px solid #666;
+  padding-top: 3px;
+}
+.onlineTimer .controls > span {
+  padding: 6px 0;
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+  background-color: #bd0000;
+}
+.onlineTimer .controls > span:hover:not(.start) {
+  color: #fff;
+  cursor: pointer;
+}
+.onlineTimer .controls > span.disabled {
+  /*background-color: darken(@acred,0.5);*/
+}
+.onlineTimer .controls > span:first-child {
+  border-radius: 0 0 0 3px;
+  width: 30%;
+  border-right: 1px solid #000;
+}
+.onlineTimer .controls > span:last-child {
+  border-radius: 0 0 3px 0;
+}
+.onlineTimer .controls > span.start {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+body[rel=online] .cars.subpanel .nav,
+body[rel=lan] .cars.subpanel .nav {
+  display: none;
+}
+body[rel=online] .submenu,
+body[rel=lan] .submenu {
+  /*width: 855px;*/
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0) 100%);*/
+  -webkit-mask: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 0%, #000000 5%, #000000 100%);
+}
+body[rel=online] .submenu > div:nth-child(3),
+body[rel=lan] .submenu > div:nth-child(3),
+body[rel=online] .submenu > div:nth-child(4),
+body[rel=lan] .submenu > div:nth-child(4),
+body[rel=online] .submenu > div[data-mode=startrace],
+body[rel=lan] .submenu > div[data-mode=startrace] {
+  display: none;
+}
+body[rel=online] .panel.drive .summary,
+body[rel=lan] .panel.drive .summary {
+  top: 300px;
+}
+body[rel=online] .panel.drive .summary .pb,
+body[rel=lan] .panel.drive .summary .pb {
+  right: 28px;
+  display: none;
+}
+body[rel=online] .panel.drive .summary .trackselection,
+body[rel=lan] .panel.drive .summary .trackselection,
+body[rel=online] .panel.drive .summary .trackname,
+body[rel=lan] .panel.drive .summary .trackname,
+body[rel=online] .panel.drive .summary .nav,
+body[rel=lan] .panel.drive .summary .nav {
+  display: none !important;
+}
+body[rel=online] .panel.drive .summary .top,
+body[rel=lan] .panel.drive .summary .top {
+  height: 220px;
+}
+body[rel=online] .panel.drive .summary .top .label,
+body[rel=lan] .panel.drive .summary .top .label {
+  width: 294px;
+  height: 212px;
+}
+body[rel=online] .panel.drive .summary .top .label .carname,
+body[rel=lan] .panel.drive .summary .top .label .carname {
+  margin: 179px 0 5px 0;
+  font-size: 14px;
+}
+body[rel=online] .panel.drive .summary .top .preview,
+body[rel=lan] .panel.drive .summary .top .preview {
+  left: 295px;
+  width: 488px;
+  height: 212px;
+}
+body[rel=online] .panel.drive .summary .top .preview .car,
+body[rel=lan] .panel.drive .summary .top .preview .car {
+  width: 460px;
+  background-position: bottom center;
+}
+body[rel=online] .panel.drive .summary .top .preview .badge,
+body[rel=lan] .panel.drive .summary .top .preview .badge {
+  width: 128px;
+  top: 29px;
+  left: -206px;
+}
+html.dev .widget.onlydev {
+  display: inline-block !important;
+}
+/*# sourceMappingURL=online.css.map */
